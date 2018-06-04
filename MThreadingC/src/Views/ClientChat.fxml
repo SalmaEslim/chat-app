@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientChatController">
+   <children>
+      <TextArea fx:id="messageArea" layoutX="41.0" layoutY="212.0" prefHeight="271.0" prefWidth="364.0" />
+      <Label fx:id="messagelable" layoutX="81.0" layoutY="151.0" lineSpacing="80.0" text="Message" />
+      <TextField fx:id="textField" layoutX="157.0" layoutY="147.0" onAction="#onAction" prefHeight="25.0" prefWidth="248.0" />
+      <Label fx:id="Tolable" layoutX="491.0" layoutY="151.0" text="To:" />
+      <TextField fx:id="recivername" layoutX="532.0" layoutY="147.0" onAction="#recivername" prefHeight="25.0" prefWidth="130.0" />
+      <ListView fx:id="clientsList" layoutX="499.0" layoutY="212.0" onMouseClicked="#itemselected" prefHeight="271.0" prefWidth="163.0" />
+      <HBox layoutX="40.0" layoutY="14.0" prefHeight="100.0" prefWidth="612.0">
+         <children>
+            <ImageView fitHeight="99.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/download.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/download.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="150.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="158.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/images.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets left="155.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </HBox>
+   </children>
+</Pane>
